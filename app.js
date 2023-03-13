@@ -17,27 +17,17 @@ chatApp.engine("html", require("ejs").renderFile);
 chatApp.set("views", path.join(__dirname, 'views'));
 
 chatApp.use("/public", express.static(__dirname + '/public'));
-
-app.use("/public", express.static(__dirname + '/public'));
-app.use(methodOverride("_method"))
-app.use(express.urlencoded({extended: true})) 
+chatApp.use(methodOverride("_method"));
+chatApp.use(express.urlencoded({extended: true}));
 
 
 //Router Setting
 const router = require("./routes/index");
 chatApp.use(router);
-app.use("/",router)
+chatApp.use("/",router);
 
 
 // Chat Server Open
 http.listen(4001, () => {
     console.log("Chat Server listening on port 4001!");
 })
-
-
-
-
-
-
-
-

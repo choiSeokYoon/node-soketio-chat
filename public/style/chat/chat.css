@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: linear-gradient(0deg, rgb(247, 247, 247) 23%, rgb(252, 221, 221) 92%);
+ 
   height: 100vh;
   overflow: hidden;
 }
@@ -34,7 +34,7 @@ body {
 #wrap .chat_box .user_box {
   flex-basis: 30%;
   height: 100%;
-  background: rgb(201, 189, 190);
+  background: #E9F8F9;
   box-shadow: 0 20px 20px 0 rgba(255, 169, 169, 0.6);
   border-radius: 10px;
 }
@@ -44,7 +44,7 @@ body {
   text-align: center;
   font-weight: bold;
   padding: 20px;
-  border-bottom: 3px solid rgb(40, 150, 253);
+  
 }
 #wrap .chat_box .user_box .users {
   list-style: none;
@@ -53,7 +53,7 @@ body {
 #wrap .chat_box .user_box .users .user_notice {
   font-size: 18px;
   padding: 20px;
-  border-bottom: 3px solid rgb(40, 150, 253);
+  
   border-radius: 5px;
   font-weight: bold;
   color: black;
@@ -67,7 +67,7 @@ body {
 #wrap .chat_box .chat_box_list .messages {
   list-style: none;
   height: 550px;
-  background: rgb(212, 255, 231);
+  background: #F6E6C2;
   overflow-y: auto;
 }
 #wrap .chat_box .chat_box_list .messages li {
@@ -136,6 +136,7 @@ body {
   border: none;
   width: 450px;
   flex-basis: 85%;
+  padding: 0 10px;
 }
 #wrap .chat_box .form_box .msg_btn {
   background: rgb(197, 153, 247);
